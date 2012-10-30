@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Add Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="../static/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le fav and touch icons -->
+      </head>
+
+  <body>
+
+<div class="navbar navbar-inner navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Muchuba</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Dashboard</a></li>
+              <li><a href="#about">Profile</a></li>
+              <li><a href="#contact">Contacts</a></li>
+              <li><a href="#about">Finances</a></li>
+              <li><a href="#contact">Projects</a></li>
+              <li><a href="#about">Messages</a></li>
+              <li><a href="#contact">Account</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+  </div>
+  </div>
+
+ 
+
+    <div class="container">
+		<div class="row">
+        <div class="span2"></div>
+        <div class=" span7 hero-unit">
+        	<form id="add_project" method="post" action="#">
+            	<legend>Your Project Details</legend>
+            	 	<div class="control-group">
+                    <label class="control-label" for="projectName">Project Name:</label>
+                    <div class="controls">
+                    <input type="text" id="projectName" placeholder="Enter the name of your project" class="span4">
+                    </div>
+                    </div>
+                    
+                    <div class="control-group">
+                    <label class="control-label" for="workrequired">What work do you require? </label>
+                    <div class="controls">
+                    <select class="span4">
+                    <option>option1</option>
+                    <option>option2</option>
+                    <option>option3</option>
+                    <option>option4</option>
+                    <option>...</option>
+                    </select>
+                    </div>
+                    </div>
+                    
+                    <div class="control-group">
+                    <label class="control-label" for="Skills">Enter some skills that relate to the project:</label>
+                    <div class="controls">
+                    <select class="span4">
+                    <option>skill1</option>
+                    <option>skill2</option>
+                    <option>skill3</option>
+                    <option>skill4</option>
+                    <option>...</option>
+                    </select>
+                    </div>
+                    </div>
+            	 	
+                    <div class="control-group">
+                    <label class="control-label" for="projectDetail">Describe your project in detail: </label>
+                    <div class="controls">
+                    <textarea rows="5" class="span4"></textarea>
+                    <div class="controls well">
+                    <button class="btn">Add Files...</button>
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div class="control-group">
+                    <label class="control-label" for="projectType">Project Type:</label>
+                    <div class="controls">
+                    <label class="radio btn">
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Fixed Price
+                    </label><p></p>
+                    <label class="radio btn">
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Hourly budget
+                    </label>
+                    </div>
+                    </div>
+                    
+                    <div class="control-group">
+                    <label class="control-label" for="Budget">Budget:</label>
+                    <div class="controls">
+                    <select class="span1">
+                    <option>USD</option>
+                    <option>Ush</option>
+                    <option>Ksh</option>
+                    <option>EUR</option>
+                    <option>...</option>
+                    </select>
+                    <select>
+                    <option>skill1</option>
+                    <option>skill2</option>
+                    <option>skill3</option>
+                    <option>skill4</option>
+                    <option>...</option>
+                    </select>                   
+                    </div>
+                    </div>
+                    
+                    <div class="control-group">
+                    <label class="control-label" for="promotelistings">Promote your listing (Optional):</label>
+                    <div class="controls well">
+                    <label class="checkbox">
+						<input type="checkbox"> I want my project to be listed as a featured project. Featured projects attract more, higher quality bids. They appear prominently on the home page.
+					</label>
+                    </div>
+                    <div class="controls well">
+                    <label class="checkbox">
+					<input type="checkbox"> I want my project to be marked as an urgent project Receive a faster response from Freelancers to get your project started within 24 hours! 
+					</label>
+                    </div>
+                    <div class="controls well">
+                    <label class="checkbox">
+					<input type="checkbox"> I want to hide project details from search engines and users that are not logged in This feature is recommended for projects where confidentiality is a must. 
+					</label>
+                    </div>
+                    <div class="controls well">
+                    <label class="checkbox">
+					<input type="checkbox"> I want all the bids to be sealed so that bidders cannot see what others are bidding Sealed Bidding may lead to lower bids for your project! 
+					</label>
+                    </div>
+                    <div class="controls well">
+                    <label class="checkbox">
+					<input type="checkbox"> This project is for hiring a full time or commission based position (e.g. Sales). No other fees are charged to employers or workers, including project comissions. Employers will save a lot if they have ongoing work.
+					</label>
+                    </div>
+                    </div>
+	By clicking 'Post Project Now', you are indicating that you have read and agree to the Terms & Conditions and Privacy Policy
+                    <div class="control-group">
+                    <div class="controls">
+                    <button type="submit" class="btn btn-primary"><h4>Post Project Now</h4></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/bootstrap.js"></script>
+
+  
+
+</body></html>
